@@ -15,7 +15,7 @@ Programmieren Sie bitte in Python einen einfachen Webserver `serverlein.py` mit 
 - *Die vom Sender erzeugte Antwort muss vor dem Versand mit `encode()` in das UTF-8 - Format konvertiert werden.*
 - *Um beim Testen die Meldung `Address is already in use`  zu vermeiden, kann vor dem Aufruf von `bind` diese Zeile eingefügt werden:* 
 *`s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)`*
-- *Test des Servers mittel Webbrowser, URL `http://<familienname>.local:8080`*
+- *Test des Servers mittels Webbrowser, URL `http://<familienname>.local:8080`*
 
 ## Bonusaufgabe: **(20 Punkte)**  
 Der Server liefert als Antwort nicht nur `Hi BULME`, sondern `Hi BULME an (<IP>, <Portnummer)`. IP und Portnummer sind dabei die Verbindungs-Parameter es aufrufenden Clientrechners.
@@ -27,10 +27,10 @@ Versionierung des Projektes mit git und Upload des Repositorys `nwestest_1` auf 
 
 | Punkte | Note |
 |--------|------|
-|100-89  |sehr gut |
-|88-76|gut |
-|75-63| befriedigend|
-|62-50 | genügend |
-|49-0| nicht genügend|
+|100 - 89  |sehr gut |
+|88 - 76|gut |
+|75 - 63| befriedigend|
+|62 - 50 | genügend |
+|49 - 0| nicht genügend|
 
 ### *Bitte hier Ihren Namen eintragen:*
