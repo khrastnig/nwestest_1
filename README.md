@@ -1,5 +1,6 @@
-# Aufgabenstellung: Webserver-Programm in Python mit socket - Library
-## Programmieren Sie bitte in Python einen einfachen Webserver mit Hilfe der socket – Bibliothek mit folgender Funktionalität:  **(60 Punkte)**
+# Webserver-Programm in Python
+## Aufgabenstellung **(60 Punkte)**
+Programmieren Sie bitte in Python einen einfachen Webserver mit Hilfe der socket–Bibliothek mit folgender Funktionalität:  
 
 1. Nach dem Start mit `./webserver.py` soll der Server auf allen Interfaces auf Port 8080 empfangsbereit sein.
 2. Ablauf der Kommunikation Client-Server gemäß HTTP:
@@ -12,7 +13,7 @@
 
 ### *Tipps:* 
 - *Die vom Sender erzeugte Antwort muss vor dem Versand mit `encode()` in das UTF-8 - Format konvertiert werden.*
-- *Um beim Testen die Meldung `Address is already in use` zu vermeiden, kann vor dem Aufruf von `bind` diese Zeile eingefügt werden:* 
+- *Um beim Testen die Meldung `Address is already in use`  zu vermeiden, kann vor dem Aufruf von `bind` diese Zeile eingefügt werden:* 
 *`s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)`*
 - *Test des Servers mittel Webbrowser, URL `http://<familienname>.local:8080`*
 
@@ -22,6 +23,7 @@ Der Server liefert als Antwort nicht nur `Hi BULME`, sondern `Hi BULME an (<IP>,
 ## Abgabe via github: **(20 Punkte)**
 Versionierung des Projektes mit git und Upload des Repositorys `nwestest_1` auf den eigenen github-Account.
 
+### Notenschlüssel
 
 | Punkte | Note |
 |--------|------|
