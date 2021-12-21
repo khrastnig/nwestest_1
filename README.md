@@ -1,6 +1,6 @@
 # Webserver-Programm in Python
 ## Aufgabenstellung **(60 Punkte)**
-Programmieren Sie bitte in Python einen einfachen Webserver `serverlein.py` mit Hilfe der socket–Bibliothek mit folgender Funktionalität:  
+Programmieren Sie bitte in Python einen einfachen Webserver `serverlein.py` mit folgender Funktionalität unter Verwendung der socket–Bibliothek:  
 
 1. Nach dem Start mit `./serverlein.py` soll der Server auf allen Interfaces auf Port 8080 empfangsbereit sein.
 2. Ablauf der Kommunikation Client-Server gemäß HTTP:
