@@ -15,19 +15,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s: #wird s zugeordnet
         with conn:
             print('Connected by', addr)
             count=0
-            while True:
-                count=count+1
-                print(count)
-                data = conn.recv(1024)  #Daten vom Client werden empfangen (zahl) gibt die menge der bytes an
-                #receved from client            
-                if not data: break      #Wenn keine Daten dann bricht er ab
-                outdata ="HTTP/1.1 200 OK\r\n\r\n<html><body><h1>Hi BULME</h1></body></html>"
-                answer=outdata.encode()
-                print(answer)
-                conn.sendall(answer)   #conn.sendall(data) -> conn.sendall(outdata)   alles wird geschickt
+            data = conn.recv(1024)  #Daten vom Client werden empfangen (zahl) gibt die menge der bytes an
+                    
+            if not data: break      #Wenn keine Daten dann bricht er ab
+            outdata ="HTTP/1.1 200 OK\r\n\r\n<html><body><h1>Hi BULME</h1></body></html>"
+            answer=outdata.encode()
+            print(answer)
+            conn.sendall(answer)   #conn.sendall(data) -> conn.sendall(outdata)   alles wird geschickt
                                         #bis der Inhalt plus alle paketdaten gesendet sind. die Paketgrösse ist
                                     #genormt. ist ein paket größer, wird
-                conn.close()
+            conn.close()
 
 
 
