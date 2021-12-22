@@ -27,6 +27,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s: #wird s zugeordnet
                 conn.sendall(answer)   #conn.sendall(data) -> conn.sendall(outdata)   alles wird geschickt
                                         #bis der Inhalt plus alle paketdaten gesendet sind. die Paketgrösse ist
                                     #genormt. ist ein paket größer, wird
+                conn.close()
 
 
 
